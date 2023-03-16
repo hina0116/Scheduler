@@ -5,5 +5,8 @@
 
   <p>Title</p>
   <span><%= link_to task.name, "/tasks/#{task.id}" %></span>
+    <% if task.user == current_user %>
+      <%= link_to "削除", tasks_path, method: :delete %>
+    <% end %>
 
 <% end %>
