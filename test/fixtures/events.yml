@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  start: 2023-04-03 05:03:00
+  end: 2023-04-03 05:03:00
+  content: MyText
+
+two:
+  title: MyString
+  start: 2023-04-03 05:03:00
+  end: 2023-04-03 05:03:00
+  content: MyText

@@ -13,3 +13,18 @@ require("../calendar")
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+import { Calendar } from '@fullcalendar/core';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import interactionPlugin from '@fullcalendar/interaction';
+import timegridPlugin from '@fullcalendar/timegrid';
+
+document.addEventListener('turbolinks:load', function() {
+  var calendarEl = document.getElementById('calendar');
+
+  var calendar = new Calendar(calendarEl, {
+    plugins: [ dayGridPlugin, interactionPlugin, timegridPlugin ]
+  });
+
+  calendar.render();
+});
