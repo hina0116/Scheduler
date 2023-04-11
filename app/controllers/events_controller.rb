@@ -1,8 +1,6 @@
 class EventsController < ApplicationController
 
   def new
-    @event = Events.new
-    render plain: render_to_string(partial: 'form_new', layout: false, locals: { event: @event })
   end
 
   def index
@@ -19,7 +17,7 @@ class EventsController < ApplicationController
         respond_to do |format|
           format.js {render partial: "error" }
       end
-    end
+      end
   end
 
   def params_event
