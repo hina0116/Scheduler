@@ -11,7 +11,7 @@ class EventsController < ApplicationController
     @event = Events.new(params_event)
       if @event.save
         respond_to do |format|
-          format.html { redirect_to root_path }
+          format.html { redirect_to events_path }
       end
       else
         respond_to do |format|

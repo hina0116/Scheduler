@@ -1,18 +1,19 @@
-import Rails from "@rails/ujs"
-import Turbolinks from "turbolinks"
-import * as ActiveStorage from "@rails/activestorage"
-import "channels"
+// import Rails from "@rails/ujs"
+// import Turbolinks from "turbolinks"
+// import * as ActiveStorage from "@rails/activestorage"
+// import "channels"
 
-import "jquery";
-import "popper.js";
-import "bootstrap";
-import "../stylesheets/application"
+// import "jquery";
+// import "popper.js";
+// import "bootstrap";
+// import "../../stylesheets/application"
+// import '@fortawesome/fontawesome-free/js/all'
 
-require("../calendar")
+// require("../calendar")
 
-Rails.start()
-Turbolinks.start()
-ActiveStorage.start()
+// Rails.start()
+// Turbolinks.start()
+// ActiveStorage.start()
 
 import { Calendar } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
@@ -37,7 +38,10 @@ document.addEventListener('turbolinks:load', function() {
       expandRows: true,
       stickyHeaderDates: true,
       buttonText: {
-         today: '今日'
+         today: '今日',
+         month: '月',
+         week: '週',
+         day: '日'
       },
       allDayText: '',
       height: "auto",

@@ -2,6 +2,7 @@
   "name": "scheduler",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "5.15.4",
     "@fullcalendar/core": "^6.1.5",
     "@fullcalendar/daygrid": "^6.1.5",
     "@fullcalendar/interaction": "^6.1.5",
